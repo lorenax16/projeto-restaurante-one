@@ -19,11 +19,6 @@ Back-end:
 cd projeto-restaurante-one/apiRestaurant 
 npm install
 ``` 
-> Frontend
-```bash
-cd projeto-restaurante-one/Front-end
-npm install
-``` 
 ## Executando aplicação
 
 * Para rodar o back-end:
@@ -35,8 +30,7 @@ npm install
 * Para rodar o front-end:
 
   ```
-    cd /Front-end
-    ng s -o
+    https://github.com/lorenax16/projeto_frontend_Restaurante   
   ```
 
 ## Executando Testes
@@ -49,3 +43,29 @@ npm install
   ```
     npm test login
   ```
+  
+  ## Rotas
+  
+  * /login 
+  post: http://localhost:3001/login
+  get:  http://localhost:3001/login
+  
+  * /clientes
+  post: http://localhost:3001/clientes
+  get: http://localhost:3001/clientes/2
+  
+  */pedidos
+  post: http://localhost:3001/pedidos
+  get: http://localhost:3001/pedidos/1
+  get: http://localhost:3001/pedidos
+  patch: http://localhost:3001/pedidos/1
+  
+  */pratos
+  post: http://localhost:3001/pratos
+  get: http://localhost:3001/pratos
+  get: http://localhost:3001/pratos/5
+  put: http://localhost:3001/pratos/2
+  delete: http://localhost:3001/pratos/5
+  
+  
+  
