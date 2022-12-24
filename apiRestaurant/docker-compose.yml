@@ -1,0 +1,28 @@
+version: '3.3'
+services:
+  node:
+    # Nome da imagem
+    image: node:16-alpine
+    # Nome do container que vai ser criado
+    container_name: restaurante
+    # Mesmo que `docker run -t`
+    tty: true
+    # Mesmo que `docker run -i`
+    stdin_open: true
+    command: sh
+    # Diretório padrão de execução
+    working_dir: /app
+    ports:
+      - 3000:3000
+    volumes:
+      # Monta o diretório atual, com todos os dados do projeto, 
+      # dentro do diretório /app
+      - ./:/app
+
+  db:
+    container_name: restaurante
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: 'password'
+    ports:
+      - 3306:3306
